@@ -2,9 +2,14 @@ Normalizing Data Workshop
 
 1. Lets store some Data
     - what are we storing
-    - walk through non-normalized-data database tables
+    - walk through non-normalized-data database tables and data
     - discuss some pain points
-2. normalized  
-    - why normalize 
-    - walk through constructing new tables 
+    - discuss the anomalies found without normalization
+2. Lets Normalize 
+    - discuss rules of Normalization
+    - walk through reconstructing tables and normalizing the data 
     - compare and contrast databases
+
+References
+    https://www.studytonight.com/dbms/database-normalization.php
+    https://www.sqlite.org/lang.html
