@@ -1,0 +1,10 @@
+Normalizing Data Workshop
+
+1. Lets store some Data
+    - what are we storing
+    - walk through non-normalized-data database tables
+    - discuss some pain points
+2. normalized  
+    - why normalize 
+    - walk through constructing new tables 
+    - compare and contrast databases
