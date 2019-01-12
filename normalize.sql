@@ -150,6 +150,35 @@ values (1,2),
 (5,5)
 
 
+/* get all teachers */
 
+select * from Teachers
+
+/* get all teachers and addresses */
+
+select t.firstName, t.LastName, a.Address1, a.Address2, a.City, a.State, a.PostalCode from Teachers t 
+join Addresses a on t.AddressId = a.Id
+
+/* get all teachers and courses they teach */
+select t.firstName, t.lastName, c.name, c.description, c.roomnumber from Teachers t 
+join Teacher_Courses tc on t.id = tc.TeacherId
+join Courses c on tc.CourseId = c.Id
+
+/*get all grades and course names for student with Id 1(Oppenheim) */
+select s.LastName, c.name, g.grade from Courses c 
+inner join Student_Courses sc on c.Id = sc.CourseId 
+inner join Students s on s.Id = sc.StudentId
+inner join Student_Courses_Grades scg on scg.StudentCoursesId = sc.Id
+inner join Grades g on g.Id = scg.GradesId 
+where s.id = 1
+
+/*get all courses for the student with id of 2 */
+select s.firstName, s.lastname, c.name, c.Description from Students s 
+inner join Student_Courses sc on s.Id = sc.StudentId 
+inner join Courses c on sc.CourseId = c.Id
+where s.id = 2
+
+/*get all courses*/
+select * from Courses 
 
 
